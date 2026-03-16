@@ -2,9 +2,11 @@
 # 1 = presente, 0 = ausente
 # Mostrar la cantidad de presentes y ausentes.
 
+# BLOQUE 1: Inicialización - Contadores
 presentes = 0
 ausentes = 0
 
+# BLOQUE 2: Entrada y procesamiento - Solicitar asistencia de 10 alumnos
 for i in range(10):
     asistencia = int(input(f"Ingrese asistencia del alumno {i+1} (1=presente, 0=ausente): "))
     if asistencia == 1:
@@ -12,5 +14,6 @@ for i in range(10):
     elif asistencia == 0:
         ausentes += 1
 
+# BLOQUE 3: Salida - Mostrar resultados
 print(f"Presentes: {presentes}")
 print(f"Ausentes: {ausentes}")
